@@ -16,8 +16,10 @@ class BaseConfig:
     ADMIN = 1
     USER = 2
 
-    CATEGORIES = ["chinh-tri", "xa-hoi", "van-hoa", "kinh-te",
-                  "giao-duc", "khoa-hoc", "cong-nghe", "y-te", "the-thao", "giai-tri"]
+    # CATEGORIES = ["chinh-tri", "xa-hoi", "van-hoa", "kinh-te",
+    #               "giao-duc", "khoa-hoc", "cong-nghe", "y-te", "the-thao", "giai-tri"]
+
+    CATEGORIES = ["chinh-tri"]
 
     CATEGORIES_NAME = {"chinh-tri": "chính trị",
                        "xa-hoi": "xã hội",

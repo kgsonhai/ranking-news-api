@@ -25,7 +25,7 @@ class RankService:
                     category=category)
                 sorted_articles = sorted(
                     article_scores, key=lambda x: x.score, reverse=True)
-                top_10_articles = sorted_articles[:10]
+                top_10_articles = sorted_articles[:5]
                 article_scores_inserted.extend(top_10_articles)
             self.mysql.add_article_scores(
                 session_id=ranker.session_id, scores=article_scores_inserted)
