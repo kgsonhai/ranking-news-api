@@ -70,9 +70,9 @@ class ScoreService:
                             print('------------------------')
                             print('sim = ', sim)
                             print(
-                                "url: ", articles_by_category[index].url, "time: ", articles_by_category[index].time)
+                                "url: ", articles_by_category[index].url, "time: ", articles_by_category[index].time, "uuid: ", articles_by_category[index].id)
                             print(
-                                "url: ", articles_by_category[i].url, "time: ", articles_by_category[i].time)
+                                "url: ", articles_by_category[i].url, "time: ", articles_by_category[i].time, "uuid: ", articles_by_category[i].id)
                             print('------------------------')
             score_insert = ScoreInsert(article_id=article.id, url=article.url, category=article.category, domain=article.domain,
                                        score=score)
